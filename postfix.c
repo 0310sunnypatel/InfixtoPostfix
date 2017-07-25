@@ -77,9 +77,14 @@ int stacktop(struct stack *s)
    else
     return s->data[s->top];
 }
-int prec(infix[i])
+int prec(char x)
 {
-    if()
+    if(infix[i]=='^')
+        return 3;
+    if(infix[i]=='*' || infix[i]=='/')
+        return 2;
+    if(infix[i]=='+' || infix[i]=='-')
+        return 1;
 }
 void main()
 {
